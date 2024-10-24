@@ -1,0 +1,37 @@
+#gameArea {
+    width: 400px;
+    height: 300px;
+    border: 2px solid black;
+    position: relative;
+    background: #f0f0f0;
+    cursor: pointer;
+    user-select: none;
+}
+#circle {
+    width: 30px;
+    height: 30px;
+    background: red;
+    border-radius: 50%;
+    position: absolute;
+    transition: all 0.2s ease;
+}
+#circle.clicked {
+    transform: scale(1.2);
+    background: #ff6b6b;
+}
+#score, #timer {
+    font-size: 20px;
+    margin: 10px;
+    font-family: Arial, sans-serif;
+}
+#startBtn {
+    font-size: 16px;
+    padding: 10px 20px;
+    margin: 10px;
+    cursor: pointer;
+}
+.game-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
